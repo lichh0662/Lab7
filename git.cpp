@@ -56,7 +56,7 @@ void all__sort(T1* arr, int l, int r, S* v = nullptr)
 }
 
 template <typename T2>
-void hal_1(T2* v, const int n) {
+void h1(T2* v, const int n) {
 	for (int i = 0; i < n; i++) {
 		cin >> v[i];
 	}
@@ -69,7 +69,7 @@ void hal_1(T2* v, const int n) {
 
 
 
-void hal_2(S* v, const int n)
+void h2(S* v, const int n)
 {
 	cout << "Enter first name, second name and age: \n";
 	for (auto i = 0; i < n; i++) {
@@ -126,22 +126,22 @@ int main() {
 		switch (a) {
 		case 1: {
 			int* ar = new int[n];
-			hal_1(ar, n);
+			h1(ar, n);
 			break;
 		}
 		case 2: {
 			double* ar = new double[n];
-			hal_1(ar, n);
+			h1(ar, n);
 			break;
 		}
 		case 3: {
 			string* ar = new string[n];
-			hal_1(ar, n);
+			h1(ar, n);
 			break;
 		}
 		case 4: {
 			S s[n];
-			hal_2(s, n);
+			h2(s, n);
 		}
 		default: {
 
